@@ -6,7 +6,7 @@ fix bugs in original code, so you can run without debugging.
 note: new metrics used torchmetrics, which may be different from original one. results and metrics are in ./results folder
 
 **as for my implementation, input noise can get higher or equal scores on bleu, which means the decoding is not effective!**
-
+We strongly suggest everyone when doing brain decoding text, you should compare your results with input noise!
 *results*
 
 | noise as input | teacher-forcing | bleu-1 | rouge-1f |
