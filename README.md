@@ -8,14 +8,8 @@ note: new metrics used torchmetrics, which may be different from original one. r
 **as for my implementation, input noise can get higher or equal scores on bleu, which means the decoding is not effective!**
 We strongly suggest everyone when doing brain decoding text, you should compare your results with input noise!
 *results*
+![image](https://github.com/NeuSpeech/EEG-To-Text/assets/151606332/63965b7a-8664-47ea-a5fe-57b35d8f1c3f)
 
-| noise as input | teacher-forcing | bleu-1 | rouge-1f |
-|----------------|-----------------|--------|----------|
-| yes            | yes             | 27.47  | 33.62    |
-| no             | yes             | 27.84  | 33.77    |
-| yes            | no              | 9.23   | 13.99    |
-| no             | no              | 8.87   | 13.56    |
-# [(AAAI 2022) Open Vocabulary EEG-To-Text Decoding and Zero-shot sentiment classification](https://arxiv.org/abs/2112.02690)
 ## Create Environment
 run `conda env create -f environment.yml` to create the conda environment (named "EEGToText") used in our experiments.
 ## Download ZuCo datasets
@@ -49,13 +43,10 @@ For detailed configuration of the available arguments, please refer to function 
 
 ## Citation
 ```
-@inproceedings{wang2022open,
-  title={Open vocabulary electroencephalography-to-text decoding and zero-shot sentiment classification},
-  author={Wang, Zhenhailong and Ji, Heng},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  volume={36},
-  number={5},
-  pages={5350--5358},
-  year={2022}
+@inproceedings{jo2024are,
+  title={Are EEG-to-Text Models Working?},
+  author={Hyejeong Jo, Yiqian Yang, Juhyeok Han, Yiqun Duan, Hui Xiong, Won Hee Lee},
+  booktitle={Arxiv},
+  year={2024}
 }
 ```
