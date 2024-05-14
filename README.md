@@ -1,4 +1,5 @@
 # what's new?
+updated full paper of this issue on [https://arxiv.org/abs/2405.06459](https://arxiv.org/abs/2405.06459)
 we add teacher-forcing and non-teacher forcing, input_noise and not-input-noise conditions in evaluation
 
 fix bugs in original code, so you can run without debugging.
