@@ -126,7 +126,7 @@ def eval_model(dataloaders, device, tokenizer, criterion, model, output_all_resu
 
 
 if __name__ == '__main__':
-    home_directory = os.path.expanduser("~")
+    home_directory = os.path.expanduser(".")
     ''' get args'''
     args = get_config('eval_decoding')
 

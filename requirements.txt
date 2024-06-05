@@ -1,0 +1,11 @@
+fuzzy-match==0.0.1
+rouge==1.0.0
+torch==2.3.0
+torchaudio==2.3.0
+scipy==1.13.1
+h5py==3.11.0
+tqdm==4.62.0
+matplotlib==3.3.2
+transformers==4.41.1
+nltk==3.5
+torchmetrics==1.4.0

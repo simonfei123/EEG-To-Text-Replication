@@ -12,12 +12,43 @@ We strongly suggest everyone when doing brain decoding text, you should compare 
 ![image](https://github.com/NeuSpeech/EEG-To-Text/assets/151606332/63965b7a-8664-47ea-a5fe-57b35d8f1c3f)
 
 ## Create Environment
-run `conda env create -f environment.yml` to create the conda environment (named "EEGToText") used in our experiments.
++ For mac and linux:
+```
+virtualenv pyenv --python=3.10.12
+source pyenv/bin/activate
+pip install -r requirements.txt
+```
++ For Windows:
+```
+virtualenv pyenv --python=3.10.12
+pyenv\Scripts\activate
+pip install -r requirements.txt
+```
+
 ## Download ZuCo datasets
 - Download ZuCo v1.0 'Matlab files' for 'task1-SR','task2-NR','task3-TSR' from https://osf.io/q3zws/files/ under 'OSF Storage' root,  
 unzip and move all `.mat` files to `~/datasets/ZuCo/task1-SR/Matlab_files`,`~/datasets/ZuCo/task2-NR/Matlab_files`,`~/datasets/ZuCo/task3-TSR/Matlab_files` respectively.
+```bash
+wget https://files.osf.io/v1/resources/q3zws/providers/osfstorage/5b4eee366d4eb300106ec69c/?zip=
+mkdir -p datasets/ZuCo/task1-SR/Matlab_files
+unzip index.html?zip= -d datasets/ZuCo/task1-SR/Matlab_files
+rm index.html?zip=
+wget https://files.osf.io/v1/resources/q3zws/providers/osfstorage/5b4eee6d33f0b9000cba7151/?zip=
+mkdir -p datasets/ZuCo/task2-NR/Matlab_files
+unzip index.html?zip= -d datasets/ZuCo/task2-NR/Matlab_files
+rm index.html?zip=
+wget https://files.osf.io/v1/resources/q3zws/providers/osfstorage/5b4eee966d4eb300106ec71c/?zip=
+mkdir -p datasets/ZuCo/task3-TSR/Matlab_files
+unzip index.html?zip= -d datasets/ZuCo/task3-TSR/Matlab_files
+rm index.html?zip=
+```
 - Download ZuCo v2.0 'Matlab files' for 'task1-NR' from https://osf.io/2urht/files/ under 'OSF Storage' root, unzip and move all `.mat` files to `~/datasets/ZuCo/task2-NR-2.0/Matlab_files`.
-
+```bash
+wget https://files.de-1.osf.io/v1/resources/2urht/providers/osfstorage/5ddea2baab905e0009e77b0d/?zip=
+mkdir -p datasets/ZuCo/task2-NR-2.0/Matlab_files
+unzip index.html?zip= -d datasets/ZuCo/task2-NR-2.0/Matlab_files
+rm index.html?zip=
+```
 ## Preprocess datasets
 run `bash ./scripts/prepare_dataset.sh` to preprocess `.mat` files and prepare sentiment labels. 
 

@@ -6,7 +6,7 @@ from glob import glob
 from tqdm import tqdm
 import pickle
 
-home_directory = os.path.expanduser("~")
+home_directory = os.path.expanduser(".")
 
 rootdir = os.path.join(home_directory,"datasets/ZuCo/task2-NR-2.0/Matlab_files/")
 
